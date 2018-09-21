@@ -7,11 +7,21 @@ How is the staging area different from the working directory and the repository?
 	The staging area gives us a place to gather relevant files, and then proceed to commit the changes to these files in one go. The working directory is just a place on our hard drive where all these files exist.
 
 How can you use the staging area to make sure you have one commit per logical change?
+	
+	Maybe by using git diff --staged command, we can check what changes exist in the most recent commit, as well as the file in the staging area, to be committed.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
+	Branches can be extremely useful when you wish to create versions of a file, where each introduces a new distinct feature, or when you wish to create a logical checkpoint, from where one can add other functionalities, on a temporary basis.
+
 How do the diagrams help you visualize the branch structure?
+
+	The diagrams are easy to understand and help us visualise a simple line diagram as to which commit belongs to which branch, and how many branches exist.
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
+	Merging the two branches kept the game the same as it was, and introduced the new coins feature developed as a new branch in the final game. We show it merged in the diagram because it merges the features of the two branches 'master' and 'coins' since it has the features of both.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+	
+	Automatic merging is useful and quick in some cases, but it fails when there is a single line change or a semantic conflict between the two files. Manual merging is useful where automatic merging fails, but is a tedious work to do every time.
